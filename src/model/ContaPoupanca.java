@@ -1,9 +1,9 @@
 package model;
 
-public class ContaPoupanca extends Conta {
+public class ContaPoupanca extends Conta  implements IConta{
 
-    public ContaPoupanca(Cliente cliente) {
-        super(cliente);
+    public ContaPoupanca(Cliente cliente, double saldo) {
+        super(cliente,saldo);
     }
 
     @Override

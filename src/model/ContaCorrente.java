@@ -1,8 +1,8 @@
 package model;
 
-public class ContaCorrente extends Conta {
-    public ContaCorrente(Cliente cliente) {
-        super(cliente);
+public class ContaCorrente extends Conta implements IConta{
+    public ContaCorrente(Cliente cliente, double saldo) {
+        super(cliente,saldo);
     }
 
     @Override
